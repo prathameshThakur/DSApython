@@ -1,7 +1,6 @@
-# Stack
+[![HOME](https://img.shields.io/badge/-HOME-informational?style=plastic)](/README.md)
+# Stack 
 This lesson will introduce you to the stack data structure and its implementation in Python which we'll use in the problems throughout this chapter.
-[![home](https://img.shields.io/badge/-Home-informational?style=plastic)](#home)
-
 
 We'll cover the following
 - [What is a stack?](#what-is-stack)
