@@ -12,6 +12,7 @@ We'll cover the following
 - [Determine if Brackets are Balanced](#bracket)
     - [Algorithm](#brac-algo)
     - [Explanation](#brac-exp)
+
 ## <a name='what-is-stack'></a> What is a stack?
 In this lesson, we are going to consider the stack data structure and its implementation in Python.
 
@@ -240,16 +241,12 @@ Check out the slides below to have a look at the approach we’ll use to solve t
 
 <p align="center">
 <img src='images\brc1.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc2.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc3.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc4.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc5.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc6.PNG' alt='example' style="width:500px;height:250px;"> <br>
+</p>
 
 As shown above, our algorithm is as follows:
 
@@ -260,15 +257,11 @@ As shown above, our algorithm is as follows:
 
 <p align="center">
 <img src='images\brc7.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc8.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc9.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc10.PNG' alt='example' style="width:500px;height:250px;"> <br>
-<p align="center">
 <img src='images\brc11.PNG' alt='example' style="width:500px;height:250px;"> <br>
-
+</p>
 
 We’ve covered an example for both the balanced set of brackets and an unbalanced set of brackets, let’s move on to a special case.
 
