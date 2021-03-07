@@ -1,5 +1,5 @@
 [![HOME](https://img.shields.io/badge/-HOME-informational?style=plastic)](https://prathameshthakur.github.io/DSApython/)
-# Stack 
+# <a name='#top'></a>Stack 
 This lesson will introduce you to the stack data structure and its implementation in Python which we'll use in the problems throughout this chapter.
 
 We'll cover the following
@@ -210,3 +210,6 @@ Now we have the `peek` operation which tells us the topmost element of the stack
 If `peek` is called on the stack in the above code, it should return `D.peek` checks if the stack is not empty and if it isn’t, it returns the last element of the list, which in this case, is the top element of the stack. We return `self.items[-1]` which is the last item in the list for Python. Hence, at first, we get `D` as the element that Python thinks is on the top of the stack.
 
 Go ahead and create a stack object. You don’t have to limit yourself to letters or strings or anything like that, you could also push numbers. Just play around with this data structure and get a sense of how it works. I’ll see you in the next lesson.
+
+
+[![HOME](https://img.shields.io/badge/-Go%20to%20top-grey?style=plastic)](#top)
