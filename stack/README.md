@@ -2,17 +2,17 @@
 This lesson will introduce you to the stack data structure and its implementation in Python which we'll use in the problems throughout this chapter.
 
 We'll cover the following
-- What is a stack?
+- [What is a stack?](#what-is-stack)
 - Stack Operations
 - Push
 - Pop
-- Peek
+- [Peek](#peek)
 
 In this lesson, we are going to consider the stack data structure and its implementation in Python.
 
 In subsequent lessons, we’ll provide specific problems where a stack is particularly useful. We’ll be using the implementation that we develop in this lesson to solve those problems.
 
-## What is a stack?
+## <a name='what-is-stack'></a> What is a stack?
 
 First of all, let me describe what a stack is. Based on the name, it should be a relatively familiar concept.
 
@@ -49,7 +49,7 @@ There is another operation that we can perform on the stack, popping. Popping is
 
 Push and Pop are two fundamental routines that we’ll need for this data structure.
 
-### Peek
+### <a name='peek'></a>Peek
 Another thing that we can do is view the top element of the stack so we can ask the data structure: “What’s the top element?” and it can give that to us using the peek operation. Note that the peek operation does not remove the top element, it merely returns it.
 
 We can also check whether or not the stack is empty, and a few other things too, that will come along the way as we implement it.
