@@ -1,4 +1,4 @@
-[![HOME](https://img.shields.io/badge/-HOME-informational?style=plastic)](/./README.md/)
+[![HOME](https://img.shields.io/badge/-HOME-informational?style=plastic)](https://prathameshthakur.github.io/DSApython/)
 # Stack 
 This lesson will introduce you to the stack data structure and its implementation in Python which we'll use in the problems throughout this chapter.
 
