@@ -214,7 +214,7 @@ If `peek` is called on the stack in the above code, it should return `D.peek` ch
 
 Go ahead and create a stack object. You don’t have to limit yourself to letters or strings or anything like that, you could also push numbers. Just play around with this data structure and get a sense of how it works. I’ll see you in the next lesson.
 
-# <a name='#bracket'></a> Determine if Brackets are Balanced
+# <a name='#bracket'></a>Determine if Brackets are Balanced
 
 This lesson will teach us how to determine whether or not a string has balanced usage of brackets by using a stack.
 
@@ -232,9 +232,8 @@ A balanced set of brackets is one where the number and type of opening and closi
 ### Examples of Unbalanced Brackets 
 - ( ( )
 - { { { ) } ]
-- [ ] [ ] ] ]
 
-### <a name='#brac-algo'></a> Algorithm
+### <a name='#brac-algo'></a>Algorithm
 
 Check out the slides below to have a look at the approach we’ll use to solve this problem:
 
@@ -302,7 +301,7 @@ def is_paren_balanced(paren_string):
         return False
 ```
 
-### <a name='#brac-exp'></a> Explanation 
+### <a name='#brac-exp'></a>Explanation 
  We declare a stack, `s` and two variables `is_balanced` and `index`, which are set to `True` and `0`, respectively.
 
 The while loop will execute if the `index` is less than the length of paren-string and `is_balanced` is equal to `True`. If any of the conditions evaluate to `False`, our program will exit the while loop. In the while loop, we iterate over each character of the `paren_string` by indexing using the `index` variable and save the indexed element in paren variable.
