@@ -13,6 +13,11 @@ We'll cover the following
     - [Algorithm](#algo-brack)
     - [Explanation](#exp-brack)
 
+- [Reverse String](#reverse-string)
+    - [Algorithm](#algo-string)
+    - [Explanation ](#exp-string)
+
+
 ## <a name='what-is-stack'></a> What is a stack?
 In this lesson, we are going to consider the stack data structure and its implementation in Python.
 
@@ -229,6 +234,7 @@ A balanced set of brackets is one where the number and type of opening and closi
 - { }
 - { } { }
 - ( ( { [ ] } ) )
+
 ### Examples of Unbalanced Brackets 
 - ( ( )
 - { { { ) } ]
@@ -398,4 +404,72 @@ True
 
 In the next lesson, we will go over another problem, i.e. reversing a string and solving it using a stack. See you there!
 
-[![HOME](https://img.shields.io/badge/-Go%20to%20top-grey?style=plastic)](#top)
+# <a name='reverse-string'></a> Reverse String
+
+In Python, you can reverse a string very easily. For example,
+```python
+input_str = "hey folks!"
+print(input_str[::-1])
+```
+Output:
+```
+!sklof yeh
+```
+However, if you are required to reverse a string using a stack, you can make use of the following algorithm..
+
+### <a name='algo-string'></a> Algorithm 
+
+
+<p align="center">
+<img src='images\str1.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\str2.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\str3.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<span>in the similar way we can stack all the words as shown below</span> <br>
+<img src='images\str4.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\str5.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\str6.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\str7.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<span>in the similar way we can pop all the words from the stack as shown below</span> <br>
+<img src='images\str8.PNG' alt='example' style="width:500px;height:250px;"> <br>
+
+</p>
+
+
+Isn’t the algorithm pretty straightforward? We push all the characters of the string onto the stack, and due to the First-In, Last-Out property of stack, we get all the characters in reverse order when we pop them off the stack.
+
+Now all that is left for us is to code the algorithm shown above. Let’s do it!
+
+The stack implementation from the first lesson of this chapter has been provided to you in the file `stack.py`. Check out the code below and feel free to play around with it:
+
+
+### Implementation 
+
+```python
+from stack import Stack
+def reverse_string(stack, input_str):
+  for i in range(len(input_str)):
+    stack.push(input_str[i])
+  rev_str = ""
+  while not stack.is_empty():
+    rev_str += stack.pop()
+
+  return rev_str
+
+stack = Stack()
+input_str = "!gninrael yppaH"
+print(reverse_string(stack, input_str))
+```
+Output:
+```
+Happy learning!
+```
+
+### <a name='exp-string'></a> Explanation
+
+Let’s discuss the reverse_string function in the code above. The for loop on line 3 iterates over input_str and pushes each character on to stack. Then we initialize rev_str as an empty string. We pop off all the elements from the stack and append them to rev_str one by one on line 7 until the stack becomes empty and terminates the while loop on line 6. We return the rev_str on line 9.
+
+Easy, right? You can test your understanding and skills in the exercise in the next lesson.
+
+
+
+[![TOP](https://img.shields.io/badge/-Go%20to%20top-grey?style=plastic)](#top)
