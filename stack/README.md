@@ -469,7 +469,7 @@ Happy learning!
 
 ### <a name='exp-string'></a> Explanation
 
-Let’s discuss the reverse_string function in the code above. The for loop on line 3 iterates over input_str and pushes each character on to stack. Then we initialize rev_str as an empty string. We pop off all the elements from the stack and append them to rev_str one by one on line 7 until the stack becomes empty and terminates the while loop on line 6. We return the rev_str on line 9.
+Let’s discuss the `reverse_string` function in the code above. The for loop iterates over `input_str` and pushes each character on to `stack`. Then we initialize `rev_str` as an empty string. We pop off all the elements from the stack and append them to `rev_str` one by one until the stack becomes empty and terminates the while loop. We return then `rev_str`.
 
 Easy, right? You can test your understanding and skills in the exercise in the next lesson.
 
