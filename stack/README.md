@@ -146,7 +146,7 @@ Output:
 We make a method called `get_stack()`. This will return the items list, which forms the core of the stack. Then I define a stack object, `myStack`, and push A and B onto the stack. After these operations, I can print `myStack` and the output is `['A', 'B']`. `A` is at the bottom of the stack, and `B` is on the top. Then we push `C` and the output is `['A', 'B', 'C']`, which implies `C` is the top.
 
 We understand the core fundamentals of the stack. A few of the other methods we can include in this are helpful, namely, we could have a method called `is_empty`. It will return whether or not the stack is empty.
-
+<a name='stack.py'></a>
 ```python
 """
 Stack Data Structure.
@@ -279,6 +279,7 @@ Now that you have got a decent idea of the algorithm, we’ll go over the implem
 
 Let’s start with the `is_paren_balanced` function:
 
+(You will find the `Stack` class implemented [here](#stack.py))
 
 ```python
 def is_paren_balanced(paren_string):
@@ -443,6 +444,8 @@ The stack implementation from the first lesson of this chapter has been provided
 
 
 ### Implementation 
+
+(You will find the `Stack` class implemented [here](#stack.py))
 
 ```python
 from stack import Stack
