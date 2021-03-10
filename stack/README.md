@@ -17,6 +17,7 @@ We'll cover the following
     - [Algorithm](#algo-string)
     - [Explanation ](#exp-string)
 
+- [Exercise: Convert Decimal Integer to Binary](#exercise-1)
 
 ## <a name='what-is-stack'></a> What is a stack?
 In this lesson, we are going to consider the stack data structure and its implementation in Python.
@@ -473,6 +474,52 @@ Let’s discuss the `reverse_string` function in the code above. The for loop it
 
 Easy, right? You can test your understanding and skills in the exercise in the next lesson.
 
+# <a name='exercise-1'></a> Exercise: Convert Decimal Integer to Binary
+In this coding exercise, you are required to use the stack data structure to convert integer values to their binary equivalent.
 
+### Division by 2 Method
+The slides below show how to use the division by 2 method to compute the binary equivalent for an integer.
+
+<p align="center">
+<img src='images\div1.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div2.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div3.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div4.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div5.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div6.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div7.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div8.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div9.PNG' alt='example' style="width:500px;height:250px;"> <br>
+<img src='images\div10.PNG' alt='example' style="width:500px;height:250px;"> <br>
+</p>
+
+
+### Coding Time! 
+You can build your solution based on division by 2 method. Your solution should return the correct binary equivalent of `dec_num` as a string from the `convert_int_to_bin(dec_num)` in order to pass the tests.
+
+Make sure that you use stack while solving this challenge. The stack.py has been imported to the code. You can make use of the implementation while coding your solution. Remove the pass statement if you start implementing your solution.
+
+### Solution
+```python
+from stack import Stack
+
+def convert_int_to_bin(dec_num):
+    
+    if dec_num == 0:
+        return 0
+    
+    s = Stack()
+
+    while dec_num > 0:
+        remainder = dec_num % 2
+        s.push(remainder)
+        dec_num = dec_num // 2
+
+    bin_num = ""
+    while not s.is_empty():
+        bin_num += str(s.pop())
+
+    return bin_num
+```
 
 [![TOP](https://img.shields.io/badge/-Go%20to%20top-grey?style=plastic)](#top)
