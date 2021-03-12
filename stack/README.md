@@ -522,4 +522,64 @@ def convert_int_to_bin(dec_num):
     return bin_num
 ```
 
+### Solution Review: Convert Decimal Integer to Binary
+
+#### Implementation: 
+
+```python
+def convert_int_to_bin(dec_num):
+    
+    if dec_num == 0:
+        return 0
+    
+    s = Stack()
+
+    while dec_num > 0:
+        remainder = dec_num % 2
+        s.push(remainder)
+        dec_num = dec_num // 2
+
+    bin_num = ""
+    while not s.is_empty():
+        bin_num += str(s.pop())
+
+    return bin_num
+
+print(convert_int_to_bin(56))
+print(convert_int_to_bin(2))
+print(convert_int_to_bin(32))
+print(convert_int_to_bin(10))
+
+print(int(convert_int_to_bin(56),2)==56)
+```
+Output:
+```
+111000
+10
+100000
+1010
+True
+```
+
+We cater to an edge case of `dec_num` being equal to `0`. If `dec_num` is equal to `0`, we `return 0`as the binary equivalent for the decimal number 00 is 00.
+
+We declare a stack and proceed to a while loop which executes if `dec_num` is greater than `0`.
+
+As stated in the division by 2 method, we calculate the remainder of the division of `dec_num` by `2` and push it onto the stack. Then we divide `dec_num` by 2 using the `//` operator to dec_num which floors the answer of the division, and we update dec_num with the answer. We keep executing the code as long as dec_num is greater than 0. As soon as dec_num becomes equal to or less than 0, the while loop terminates.
+
+`bin_num` is declared as an empty string. The while loop on the very next line executes if the stack s is not empty. If `s` is not empty, we pop a value from s and append it to the `bin_num` string. We keep popping elements from s until it becomes empty and the while loop is terminated.
+
+The following code helps us to evaluate whether our implementation is correct or not:
+```py
+print(int(convert_int_to_bin(56),2)==56)
+```
+The above statement will print True if `convert_int_to_bin(56)` returns the correct binary equivalent for `56`. We convert the returned value from convert_int_to_bin(56) to an integer value by specifying `base 2` of the returned value. It will convert to 56 if it’s equal to 56 in binary format. Otherwise, the statement will print `False` if we get some number other than 56.
+
+In this problem, the First-In, Last-Out property of the stack has enabled us to store the binary bits from the MSB (Most Significant Bit) to the LSB (Least Significant Bit), although we get the values in reverse order by the division by 2 method.
+
+Hope everything’s clear up until now! We’ll now move on to the next chapter which is all about Singly Linked Lists.
+
+
+
+
 [![TOP](https://img.shields.io/badge/-Go%20to%20top-grey?style=plastic)](#top)
