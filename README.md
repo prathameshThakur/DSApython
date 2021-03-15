@@ -2,7 +2,7 @@
 You will find a basic introduction and a few challenges for the following data structures, grok these data structures now 👆
 
 - **[Stacks](/stack/README.md)**
-- Singly Linked Lists
+- **[Singly Linked Lists](/singly-linked-lists/README.md)**
 - Circular Linked Lists
 - Doubly Linked Lists
 - Arrays
